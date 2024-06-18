@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telaCadastrar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#600000"
+    tools:context=".activity.CadastrarDesaparecidoActivity">
+
+    <TextView
+        android:id="@+id/activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/koulen_regular"
+        android:text="@string/nome_aplicativo"
+        android:textColor="#BFFFFFFF"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="@+id/telaCadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/telaCadastrar"
+        app:layout_constraintStart_toStartOf="@+id/telaCadastrar"
+        app:layout_constraintTop_toTopOf="@+id/telaCadastrar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/campo_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/koulen_regular"
+        android:text="CADASTRAR DESAPARECIDO"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="129dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/raio_da_bordas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_select_image" />
+
+    <Button
+        android:id="@+id/button_select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#007AFF"
+        android:text="Selecionar Imagem"
+        android:fontFamily="@font/koulen_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main" />
+
+    <EditText
+        android:id="@+id/campo_dataNascimento"
+        android:layout_width="316dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/raio_da_bordas"
+        android:fontFamily="@font/koulen_regular"
+        android:gravity="top"
+        android:hint="Data de nascimento"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#D3D3D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campo_nome" />
+
+    <EditText
+        android:id="@+id/campo_descricao"
+        android:layout_width="316dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/raio_da_bordas"
+        android:fontFamily="@font/koulen_regular"
+        android:gravity="top"
+        android:hint="DESCRICAO"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#D3D3D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_dataNascimento" />
+
+    <EditText
+        android:id="@+id/campo_nome"
+        android:layout_width="316dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/raio_da_bordas"
+        android:fontFamily="@font/koulen_regular"
+        android:gravity="top"
+        android:hint="NOME"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#D3D3D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/campo_botao_cadastrar"
+        android:layout_width="316dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#008B51"
+        android:fontFamily="@font/koulen_regular"
+        android:padding="10dp"
+        android:text="CADASTRAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campo_descricao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

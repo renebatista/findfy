@@ -1,0 +1,9 @@
+<resources>
+    <!--Criando strings para deixar o codigo mais organizado-->
+    <string name="app_name">FrontEnd_A3</string>
+    <string name="nome_aplicativo">FINDIFY</string>
+    <string name="rodape_app">2024.1 - Moscowgroup</string>
+    <string name="cadastrar_desaparecido">Cadastrar desaparecido</string>
+    <string name="ver_desaparecidos">Ver desaparecidos</string>
+
+</resources>
